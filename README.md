@@ -6,7 +6,7 @@ A simple ComfyUI custom node for background removal using the [BiRefNet](https:/
 
 ## Features
 - **High-Quality Background Removal**: Powered by BiRefNet.
-- **Auto-Download**: Automatically downloads the necessary model files from HuggingFace on first run.
+- **Auto-Download**: Automatically downloads the necessary model files from HuggingFace on first run. `currently a single 444MB model file` will be downloaded into `ComfyUI/models/BiRefNet/`.
 - **RGBA Output**: Returns both the image with transparency and the corresponding mask.
 
 ## Installation
