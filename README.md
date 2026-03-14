@@ -2,6 +2,8 @@
 
 A simple ComfyUI custom node for background removal using the [BiRefNet](https://huggingface.co/ZhengPeng7/BiRefNet) model.
 
+![Example](examples/example.png)
+
 ## Features
 - **High-Quality Background Removal**: Powered by BiRefNet.
 - **Auto-Download**: Automatically downloads the necessary model files from HuggingFace on first run.
@@ -15,7 +17,7 @@ A simple ComfyUI custom node for background removal using the [BiRefNet](https:/
    ```
 2. Clone this repository:
    ```bash
-   git clone https://github.com/comfyanonymous/ComfyUI-BiRefNet.git
+   git clone https://github.com/MohammadAboulEla/ComfyUI-BiRefNet.git
    ```
 3. Restart ComfyUI.
 
