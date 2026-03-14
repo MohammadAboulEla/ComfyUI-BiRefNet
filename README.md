@@ -2,7 +2,7 @@
 
 A simple ComfyUI custom node for background removal using the [BiRefNet](https://huggingface.co/ZhengPeng7/BiRefNet) model.
 
-![Example](examples/example.png)
+![Example](examples/example.jpg)
 
 ## Features
 - **High-Quality Background Removal**: Powered by BiRefNet.
