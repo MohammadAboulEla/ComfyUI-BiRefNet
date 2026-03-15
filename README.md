@@ -35,3 +35,7 @@ The node automatically downloads the `model.safetensors` from [ZhengPeng7/BiRefN
 
 ## Credits
 Based on the research and model by [ZhengPeng7](https://github.com/ZhengPeng7/BiRefNet).
+
+Support me on PayPal
+--------------------
+[![Donate](https://img.shields.io/badge/Support-PayPal-blue.svg)](https://paypal.me/mohammadmoustafa1)
