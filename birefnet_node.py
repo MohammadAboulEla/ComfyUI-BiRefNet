@@ -62,6 +62,13 @@ class BiRefNet_Node:
         return {
             "required": {
                 "image": ("IMAGE",),
+                "keep_model_loaded": (
+                    "BOOLEAN",
+                    {
+                        "default": False,
+                        "tooltip": "Keep the model in VRAM after inference. Disable to free memory (Recommended).",
+                    },
+                ),
             }
         }
 
@@ -70,7 +77,7 @@ class BiRefNet_Node:
     FUNCTION = "remove_background"
     CATEGORY = "BiRefNet"
 
-    def remove_background(self, image):
+    def remove_background(self, image, keep_model_loaded=False):
         model_name = "model.safetensors"
         model_path = os.path.join(folder_paths.models_dir, "BiRefNet", model_name)
         check_download_model(model_path, repo_id="ZhengPeng7/BiRefNet")
@@ -127,6 +134,10 @@ class BiRefNet_Node:
 
         new_ims = torch.cat(processed_images, dim=0)
         new_masks = torch.cat(processed_masks, dim=0)
+
+        if not keep_model_loaded:
+            del birefnetmodel
+            torch.cuda.empty_cache()
 
         return new_ims, new_masks
 
